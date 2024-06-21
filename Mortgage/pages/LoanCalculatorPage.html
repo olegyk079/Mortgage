@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html la+ang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Credit Hipoteczny</title>
+    <table>
+        <form action="MainPage.html" >
+        <button class="btn btn-success">Strona główna</button>
+        </form>
+        <form action="LoanCalculatorPage.html" >
+        <button  class="btn btn-danger">Kalkulator</button>
+        </form>
+        <form action="AboutPage.html" >
+        <button class="btn btn-info">Kontakt</button>
+        </form>
+    </table>
+    <table>
+        <h1 style="color: blue" aliчgn="center" id="login-header"><strong>Kalkulator Kredytu Hipotecznego</strong></h1>
+     <th>Wprowadź dane pożyczki:</th>
+            <td></td>
+        <tr><td>Kwota pozyczki (zł):</td>
+            <td><input type="text" id="amount" oninput="validateInput(this)"></td>
+            <td rowspan=8>
+        <tr><td>Roczne odsetki (%):</td>
+            <td><input type="text" id="apr" oninput="validateInput(this)"></td></tr>
+        <tr><td>Okres spłaty (lata):</td>
+            <td><input type="text" id="years" oninput="validateInput(this)"></td>
+        <tr><th>Przybliżone płatności:</th>
+            <td><button onclick="calculate();"><input type= submit></button></td></tr>
+        <tr><td>Miesięczna płatność:</td>
+            <td><span id="payment"></span> zł</td></tr>
+        <tr><td>Całkowita płatność:</td>
+            <td><span id="total"></span> zł</td></tr>
+        <tr><td>Całkowite odsetki:</td>
+            <td><span id="totalinterest"></span> zł</td></tr>
+            <div id="lenders"></div></td></tr>
+    </table>
+    <link rel="stylesheet" href="../styles/PhotoSize.css" />
+    <script src="../function.js"></script>
+</head>
+<body>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</body>
+</html>
